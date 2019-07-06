@@ -6,15 +6,16 @@ import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
-    val sendButton = findViewById<Button>(R.id.button1)
-    val returnButton = findViewById<Button>(R.id.button2)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //setScreenMain()
+        var sendButton = findViewById<Button>(R.id.button1)
+        var returnButton = findViewById<Button>(R.id.button2)
 
+        setScreenMain()
+
+        /*
         returnButton.setOnClickListener {
             setContentView(R.layout.activity_sub)
         }
@@ -22,12 +23,13 @@ class MainActivity : AppCompatActivity() {
         sendButton.setOnClickListener {
             setContentView(R.layout.activity_main)
         }
+        */
 
     }
 
-    /*
     fun setScreenMain() {
         setContentView(R.layout.activity_main)
+        var sendButton = findViewById<Button>(R.id.button1)
 
         sendButton.setOnClickListener{
             setScreenSub()
@@ -36,11 +38,11 @@ class MainActivity : AppCompatActivity() {
 
     fun setScreenSub() {
         setContentView(R.layout.activity_sub)
+        var returnButton = findViewById<Button>(R.id.button2)
 
         returnButton.setOnClickListener{
             setScreenMain()
         }
     }
-    */
 
 }
