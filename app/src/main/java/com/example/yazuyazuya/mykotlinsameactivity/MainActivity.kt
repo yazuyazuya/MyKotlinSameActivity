@@ -10,20 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var sendButton = findViewById<Button>(R.id.button1)
-        var returnButton = findViewById<Button>(R.id.button2)
-
         setScreenMain()
-
-        /*
-        returnButton.setOnClickListener {
-            setContentView(R.layout.activity_sub)
-        }
-
-        sendButton.setOnClickListener {
-            setContentView(R.layout.activity_main)
-        }
-        */
 
     }
 
